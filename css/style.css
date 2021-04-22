@@ -76,6 +76,7 @@ body {
   background-image: linear-gradient(to right bottom, #261447c0, #450a5ab9, #531388a8, #791E94), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   -webkit-background-blend-mode: color;
   background-blend-mode: color;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -484,7 +485,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.3; }
+  opacity: 0.5; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -513,6 +514,7 @@ body {
   background-image: linear-gradient(to right bottom, #261447c0, #450a5ab9, #531388a8, #791E94), url("../img/skills.jpg");
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
   -webkit-clip-path: polygon(0 28%, 100% 4%, 100% 72%, 0 95%);
   clip-path: polygon(0 28%, 100% 4%, 100% 72%, 0 95%); }
   .skills__row {
