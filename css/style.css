@@ -553,7 +553,7 @@ body {
       height: 55rem;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
-      background-image: url("../../img/perfil.jpeg");
+      background-image: url("../img/perfil.jpeg");
       background-size: cover; }
     .about-me__row .col-2 {
       transform: skewX(-12deg);
