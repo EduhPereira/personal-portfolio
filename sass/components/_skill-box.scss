@@ -1,0 +1,47 @@
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 30rem;
+  width: 20rem;
+  background-color: rgba(white, .9);
+
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2.5rem;
+
+  border-radius: 5px;
+
+  box-shadow: 0 1.5rem 4rem rgba(black, .15);
+
+  transition: all .3s;
+
+  &:hover{
+      transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  .fa{
+
+    &-comments{
+        font-size: 5rem;
+        color: $section-skill-icon-color;
+    }
+
+    &-tools{
+        font-size: 5rem;
+        color: $section-skill-icon-color;
+    }
+
+    &-people-carry{
+        font-size: 5rem;
+        color: $section-skill-icon-color;
+    }
+  }
+
+  & ul{
+      font-size: 1.3rem;
+      text-transform: uppercase;
+  }
+}

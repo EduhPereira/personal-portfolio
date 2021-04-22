@@ -1,0 +1,160 @@
+.repository-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 40rem;
+  width: 25rem;
+
+  position: relative;
+
+  &__side {
+    height: 40rem;
+    width: 25rem;
+
+    transition: all 1.6s ease;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 1.5rem 1.5rem 4rem rgba(black, 0.2);
+
+    &--front {
+      border: 0.5px solid rgb(192, 83, 192);
+      background-color: $repositories-front-side-color;
+    }
+
+    &--back {
+      border: 0.5px solid rgb(192, 83, 192);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-color: #fff;
+
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: color;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: url("../../img/hcj-card.png");
+    }
+
+    &--2 {
+      background-image: url("../../img/react-card.jpg");
+    }
+
+    &--3 {
+      background-image: url("../../img/study-card.jpg");
+    }
+  }
+
+  &__heading {
+    width: 50%;
+    text-align: right;
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 15rem;
+    right: 0rem;
+  }
+
+  &__heading-span {
+    display: inline;
+    padding: 0.5rem;
+
+    font-weight: 600;
+
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right,
+        $repositories-heading-color-1,
+        $repositories-heading-color-2,
+        $repositories-heading-color-3,
+        $repositories-heading-color-4,
+        $repositories-heading-color-5,
+        $repositories-heading-color-6
+      );
+    }
+  }
+
+  &__details {
+    margin-top: 4.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    & ul {
+      text-align: center;
+    }
+  }
+
+  & a{
+    width: 70%;
+  }
+
+  &__button{
+    font-family: 'JetBrains Mono', monospace, Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 4rem;
+    width: 100%;
+
+    color: #fff;
+    background-image: linear-gradient(
+        to right,
+        $repositories-backside-color-1,
+        $repositories-backside-color-2,
+        $repositories-backside-color-3,
+        $repositories-backside-color-4,
+        $repositories-backside-color-5,
+        $repositories-backside-color-6
+      );;
+
+    cursor: pointer;
+    outline: none;
+
+    text-transform: uppercase;
+    font-weight: 700;
+
+    transition: all .5s ease;
+
+    box-shadow: 0 1.2rem 3rem rgba(#000000, .5);
+
+    &:hover{
+      background-color: gray;
+      transform: translateY(-.8rem);
+    }
+
+    &:active{
+      transform: translateY(.3rem);
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.about{
+    width: 100vw;
+    background-color: $section-about-background-color;
+    padding: 20rem 0;
+    margin-top: -25vh;
+
+    .row{
+        display: flex;
+        margin: 3rem;
+    
+        .col{
+            width: 50vw;
+            margin: 1.5rem;
+
+            &:not(:first-child){
+                margin-top: 8.5rem;
+            }
+        }
+    }
+}
+
+.skills{
+    width: 100vw;
+    padding: 20rem;
+    margin-top: -25rem;
+    -webkit-background-blend-mode: color;
+    background-blend-mode: color;
+    background-image: linear-gradient(to right bottom, $header-linear-color1, $header-linear-color2, $header-linear-color3, $header-linear-color4), url('../img/skills.jpg');
+    background-size: cover;
+    background-position: bottom;
+    -webkit-clip-path: polygon(0 28%, 100% 4%, 100% 72%, 0 95%);
+    clip-path: polygon(0 28%, 100% 4%, 100% 72%, 0 95%);
+
+    &__row{
+        display: flex;
+        justify-content: center;
+
+        .col{
+            margin: 3rem;
+        }
+    }
+
+    
+}
+
+.repositories{
+    width: 100vw;
+    background-color: $section-about-background-color;
+    padding: 20rem 0 4rem;
+    margin-top: -25rem;
+
+    &__row{
+        display: flex;
+        justify-content: center;
+
+        .col{
+            margin: 5rem;
+        }
+    }
+}
+
+.academic-formation{
+    width: 100vw;
+    position: relative;
+    padding: 5rem 0 8rem;
+
+    .section-header{
+        margin-bottom: 5rem;
+    }
+}
+
+.about-me{
+    width: 100vw;
+    background-color: $section-about-background-color;  
+    
+    padding: 7rem 10rem 7rem 7rem;
+
+    background-image: linear-gradient(to right bottom, $header-linear-color1, $header-linear-color2, $header-linear-color3, $header-linear-color4), url('../../img/about-me-background.jpg');
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        opacity: .8;
+
+        .col-1{
+            width: 30%;
+            height: 55rem;
+
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+
+            background-image: url('../../img/perfil.jpeg');
+            background-size: cover;
+        }
+
+        .col-2{
+            transform: skewX(-12deg);
+
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+
+            background-color: #fff;
+
+            height: 55rem;
+            width: 70%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding:.5rem 5rem;
+
+            .section-header{
+                transform: skewX(12deg);
+                margin-left: -8rem;
+            }
+
+            .description{
+                transform: skewX(12deg);
+
+                font-size: 1.4rem;
+                font-weight: 700;
+                text-align: justify;
+
+                &__paragraph:not(:last-child){
+                    margin-bottom: 1.8rem;
+                }
+
+                &__list{
+                    margin-bottom: 1.4rem;
+                    text-transform: capitalize;
+                }
+            }
+
+            .icons{
+                transform: skewX(12deg);
+                margin: 1rem -13.4rem 3rem 0;
+
+                &__list{
+                    display: flex;
+                    justify-content: flex-start;
+
+                    li:hover{
+                        transform: scale(1.1);
+                    }
+
+                    li:not(:last-child){
+                        margin-right: 3.5rem;
+                    }
+                }
+
+            }
+        }
+    }
+}

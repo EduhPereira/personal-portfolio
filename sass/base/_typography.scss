@@ -1,0 +1,34 @@
+.section-header{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    background-image: linear-gradient(
+      to right,
+      $header-linear-color4,
+      $header-linear-color1
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about {
+  &-paragraph {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: justify;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}

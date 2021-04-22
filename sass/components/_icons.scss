@@ -1,0 +1,19 @@
+.fa{
+    &-github-square{
+        color: $about-me-icon-color;
+        font-size: 5rem;
+        animation: moveInTop 1.5s;
+    }
+    
+    &-linkedin{
+        color: $about-me-icon-color;
+        font-size: 5rem;
+        animation: moveInTop 2s;
+    }
+    
+    &-instagram-square{
+        color: $about-me-icon-color;
+        font-size: 5rem;
+        animation: moveInTop 2.5s;
+    }
+}
