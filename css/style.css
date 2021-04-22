@@ -357,11 +357,11 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .repository-card__picture--1 {
-      background-image: url("../../img/hcj-card.png"); }
+      background-image: url("../img/hcj-card.png"); }
     .repository-card__picture--2 {
-      background-image: url("../../img/react-card.jpg"); }
+      background-image: url("../img/react-card.jpg"); }
     .repository-card__picture--3 {
-      background-image: url("../../img/study-card.jpg"); }
+      background-image: url("../img/study-card.jpg"); }
   .repository-card__heading {
     width: 50%;
     text-align: right;
@@ -543,7 +543,7 @@ body {
   width: 100vw;
   background-color: #f7f7f7;
   padding: 7rem 10rem 7rem 7rem;
-  background-image: linear-gradient(to right bottom, #261447c0, #450a5ab9, #531388a8, #791E94), url("../../img/about-me-background.jpg"); }
+  background-image: linear-gradient(to right bottom, #261447c0, #450a5ab9, #531388a8, #791E94), url("../img/about-me-background.jpg"); }
   .about-me__row {
     display: flex;
     justify-content: space-between;

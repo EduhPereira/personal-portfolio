@@ -75,7 +75,7 @@
     
     padding: 7rem 10rem 7rem 7rem;
 
-    background-image: linear-gradient(to right bottom, $header-linear-color1, $header-linear-color2, $header-linear-color3, $header-linear-color4), url('../../img/about-me-background.jpg');
+    background-image: linear-gradient(to right bottom, $header-linear-color1, $header-linear-color2, $header-linear-color3, $header-linear-color4), url('../img/about-me-background.jpg');
 
     &__row{
         display: flex;
